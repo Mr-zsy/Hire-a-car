@@ -1,0 +1,28 @@
+<view class='nav'>
+   <view class='img_wrappe nav_item'>
+      <image src='../../images/icon_user.png'></image>
+   </view>
+   <view class="nav_item {{selectedNo == '1'?'selected_item':''}}" data-no="1" bindtap='select'>快车</view>
+   <view class="nav_item {{selectedNo == '2' ? 'selected_item':''}}" data-no="2" bindtap='select'>出租车</view>
+   <view class="nav_item {{selectedNo == '3' ? 'selected_item':''}}" data-no="3" bindtap='select'>代驾</view>
+</view>
+<view class="map_wrapper {{isOrder?'mapIs':''}}">
+   <map>
+   </map>
+</view>
+<view class="order {{isOrder?'orderIs':''}}">
+  <view class="order_item order_item_selected">现在</view>
+  <view class="order_item order_item_selected" bindtap="selectOrder">预约</view>
+  <view class="order_time_wrapper" wx:if="{{isOrder}}">
+    <image src="../../images/icon_time.png" />
+    <view>{{orderTime}}</view>
+  </view>
+  <view class="order_time">
+    <view class="start_icon"></view>
+    <input type="text" />
+    <view class="blank"></view>
+    <view class="end_icon"></view>
+    <input type="text" />
+  </view>
+  
+</view>

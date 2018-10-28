@@ -1,0 +1,121 @@
+.nav{
+   width: 100%;
+   padding: 2rpx;
+   box-sizing: border-box;
+   overflow: auto;
+   box-shadow: 0 4rpx rgb(200, 199, 199);
+   margin-bottom: 10rpx;
+}
+.nav image{
+   width: 70rpx;
+   height: 70rpx;
+}
+.nav_item{
+   float: left;
+   height: 90rpx;
+}
+.nav_item:nth-of-type(1){
+  margin-right: 130rpx;
+}
+.nav_item:nth-of-type(n+2){
+  line-height: 90rpx;
+  margin-right: 50rpx;
+  color: rgb(104, 101, 101);
+}
+.nav .selected_item{
+  color: rgb(247, 68, 83);
+}
+.map_wrapper{
+  width: 100%;
+  height: 800rpx;
+}
+.mapIs{
+  height: 745rpx;
+}
+map{
+  width: 100%;
+  height: 100%;
+}
+.order{
+  width: 100%;
+  height: calc(100% - 804rpx);
+  padding: 10rpx;
+  box-sizing: border-box;
+}
+.orderIs{
+  height: calc(100% - 809rpx);
+}
+.order_item{
+  float: left;
+
+}
+.order_time_wrapper image{
+  width: 46rpx;
+  height: 46rpx;
+}
+.order_item{
+  margin-top: 20rpx;
+  width: 80rpx;
+  height: 48rpx;
+  font-size: 30rpx;
+  text-align: center;
+  line-height: 48rpx;
+  margin-bottom: 10rpx;
+}
+.order_item:nth-of-type(1){
+  margin-left: 250rpx;
+}
+.order_item:nth-of-type(2){
+  margin-left: 50rpx;
+}
+.order_item_selected{
+  border: 2rpx solid #999;
+  border-radius: 10rpx;
+}
+.order_time{
+  padding: 0 40rpx;
+  box-sizing: border-box;
+}
+.order_time_wrapper{
+  clear: both;
+  text-align: center;
+  height: 52rpx;
+  font-size: 28rpx;
+  color: #999;                                                                                                                                                                                                                                            
+}
+.order_time_wrapper view{
+  display: inline-block;
+  height: 52rpx;
+  line-height: 52rpx;
+  vertical-align: top;
+}
+.order_time_wrapper image{
+  vertical-align: top;
+}
+.start_icon{
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 50%;
+  background-color: #04e62a;
+  display: inline-block;
+}
+.end_icon{
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 50%;
+  background-color: #f0442e;
+  display: inline-block;
+}
+.start_icon,.end_icon{
+  margin-right: 20rpx;
+}
+.order_time{
+  clear: both;
+  height: 100rpx;
+  width: 100%;
+}
+.blank{
+  width: 90%;
+  border-bottom: 3rpx solid #999;
+  margin: 0 auto;
+}
